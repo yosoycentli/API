@@ -39,7 +39,7 @@ const variantCountries = [
 	'Sweden'
 ];
 
-describe('TESTING /v3/covid-19/variants/countries general', () => {
+describe.skip('TESTING /v3/covid-19/variants/countries general', () => {
 	it('/v3/covid-19/variants/countries/ correct countries', (done) => {
 		chai.request(app)
 			.get('/v3/covid-19/variants/countries')
@@ -63,7 +63,7 @@ describe('TESTING /v3/covid-19/variants/countries general', () => {
 	});
 });
 
-describe('TESTING /v3/covid-19/variants/countries/country', () => {
+describe.skip('TESTING /v3/covid-19/variants/countries/country', () => {
 	it('/v3/covid-19/variants/Country variants correct fields set', (done) => {
 		chai.request(app)
 			.get('/v3/covid-19/variants/countries/Austria')
